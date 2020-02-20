@@ -1,36 +1,33 @@
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 # Java
-choco install openjdk8 --yes
-choco install openjdk11 --yes
-choco install openjdk12 --yes
-choco install openjdk13 --yes
-
-# IDE
-choco install intellijidea-community --yes
-choco install vscode --yes
+choco install openjdk13 --yes >> chocolateyInstall.log
 
 # DB clients
-choco install dbeaver --yes
-#choco install oracle-sql-developer --yes
-#choco install mysql.workbench --yes
-#choco install sql-server-management-studio --yes
+choco install dbeaver --yes >> chocolateyInstall.log
+
+# IDE
+choco install intellijidea-community --yes >> chocolateyInstall.log
+choco install vscode --yes >> chocolateyInstall.log
+
+# Frontend
+choco install nodejs --yes >> chocolateyInstall.log
 
 # VCS
-choco install git --yes
-choco install sourcetree --yes
+choco install git --yes >> chocolateyInstall.log
+choco install sourcetree --yes >> chocolateyInstall.log
 
 # Text tools
-choco install winmerge --yes
-choco install notepadplusplus --yes
+choco install winmerge --yes >> chocolateyInstall.log
+choco install notepadplusplus --yes >> chocolateyInstall.log
 
 # Others
-choco install maven --yes
-choco install curl --yes
-choco install winscp --yes
-choco install docker-desktop --yes
-choco install soapui --yes
-choco install cmder --yes
-choco install grepwin --yes
-choco install f.lux --yes
-choco install 7zip --yes
+choco install maven --yes >> chocolateyInstall.log
+choco install curl --yes >> chocolateyInstall.log
+choco install winscp --yes >> chocolateyInstall.log
+choco install docker-desktop --yes >> chocolateyInstall.log
+choco install soapui --yes >> chocolateyInstall.log
+choco install cmder --yes >> chocolateyInstall.log
+choco install grepwin --yes >> chocolateyInstall.log
+choco install f.lux --yes >> chocolateyInstall.log
+choco install 7zip --yes >> chocolateyInstall.log
